@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undersökningsformulär</title>
+</head>
+<body>
+    <form action="" method="">
+        <section class="header">
+            <h1>Fyll i denna undersökning</h1>
+        </section>
+        <section class="info">
+            <p><strong>Skriv i ditt förnamn och efternamn</strong></p>
+            <label for="firstName">Förnamn</label>
+            <input type="text" id="firstName" placeholder="Förnamn" size="35" maxlength="20"><br>
+            <label for="lastName">Efternamn</label>
+            <input type="text" id="lastName" placeholder="Efternamn" size="35" maxlength="20"><br>
+            <label for="info">Berätta kort om dig själv</label><br>
+            <textarea id="info" name="info" cols="30" rows="4" style="background-color: gainsboro;"></textarea>
+        </section>
+        <section class="sport">
+            <p><i>Tränar du någon sport</i></p>
+            <input type="radio" id="yes" name="sport" value="yes">
+            <label for="yes">Ja</label>
+            <input type="radio" id="no" name="sport" value="no">
+            <label for="no">Nej</label>
+        </section>
+        <section class="reading">
+            <p><strong><em>På vilket sätt föredrar att läsa om intressanta saker?</em></strong></p>
+            <input type="checkbox" id="book" name="book" value="book">
+            <label for="book">Böcker</label><br>
+            <input type="checkbox" id="newspaper" name="newspaper" value="newspaper">
+            <label for="newspaper">Tidningar</label><br>
+            <input type="checkbox" id="online" name="online" value="online">
+            <label for="online">Online</label><br>
+        </section>
+        <section class="movie">
+            <label for="film">Vilken film typ gillar du?</label>
+            <select name="film" id="film">
+                <option value selected disabled></option>
+                <option value="Action">Action</option>
+                <option value="Romantik">Romantik</option>
+                <option value="Komedi">Komedi</option>
+                <option value="Drama">Drama</option>
+                <option value="Skräck">Skräck</option>
+            </select>
+        </section>
+        <section class="submission">
+            <button type="submit" name="submit">Skicka</button>
+        </section>
+    </form>
+</body>
+</html>
